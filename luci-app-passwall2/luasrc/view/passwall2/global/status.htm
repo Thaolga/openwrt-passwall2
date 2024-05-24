@@ -192,6 +192,21 @@ https://github.com/pure-css/pure/blob/master/LICENSE.md
 			}
 			return false;
 		}
+
+		function clear_check_port(btn) {
+			btn.style.display = 'none';
+			var s = document.getElementById('_check_nodes_status');
+			var p = document.getElementById('check_port')
+			p.classList.remove("pure-u-1-1");
+			s.innerHTML = "<%:Touch Check%>";
+			return false;
+		}
+setTimeout(function(){
+check_connect('github', 'www.github.com')
+check_connect('baidu', 'www.baidu.com')
+check_connect('google', 'https://www.google.com/generate_204')
+}, 500);
+
 //]]>
 	</script>
 </fieldset>
